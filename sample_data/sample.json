@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "田中太郎",
+    "age": 25,
+    "city": "東京",
+    "created_at": "2024-01-15",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "SQL"
+    ],
+    "active": true,
+    "score": 85.5
+  },
+  {
+    "id": 2,
+    "name": "佐藤花子",
+    "age": 30,
+    "city": "大阪",
+    "created_at": "2024-01-16",
+    "skills": [
+      "Java",
+      "React",
+      "Docker"
+    ],
+    "active": true,
+    "score": 92.0
+  },
+  {
+    "id": 3,
+    "name": "鈴木一郎",
+    "age": 28,
+    "city": "名古屋",
+    "created_at": "2024-01-17",
+    "skills": [
+      "Go",
+      "Vue.js",
+      "Kubernetes"
+    ],
+    "active": false,
+    "score": 78.3
+  },
+  {
+    "id": 4,
+    "name": "高橋美咲",
+    "age": 35,
+    "city": "福岡",
+    "created_at": "2024-01-18",
+    "skills": [
+      "C++",
+      "Angular",
+      "AWS"
+    ],
+    "active": true,
+    "score": 88.7
+  },
+  {
+    "id": 5,
+    "name": "伊藤健太",
+    "age": 27,
+    "city": "札幌",
+    "created_at": "2024-01-19",
+    "skills": [
+      "Rust",
+      "Svelte",
+      "GCP"
+    ],
+    "active": true,
+    "score": 95.2
+  }
+]
