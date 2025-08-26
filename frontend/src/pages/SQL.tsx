@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { api } from '../api'
 
 type Row = Record<string, any>
 
 function DataTable({ rows, columns }: { rows: Row[]; columns: string[] }) {
-  if (!rows?.length) return <div className="muted">結果がありません</div>
+  const { t } = useTranslation();
+
+  if (!rows?.length) return <div className="muted">{t('sql.noData')}</div>
   return (
     <div className="scroll mt12">
       <table>
@@ -32,6 +35,7 @@ function fmt(v: any) {
 }
 
 export default function SQL() {
+  const { t } = useTranslation();
   const [sql, setSql] = useState('SELECT 1 AS ok')
   const [rows, setRows] = useState<Row[]>([])
   const [cols, setCols] = useState<string[]>([])
@@ -50,13 +54,17 @@ export default function SQL() {
 
   return (
     <div className="card">
-      <h2>SQL 実行</h2>
+      <h2>{t('sql.title')}</h2>
       <form onSubmit={run}>
-        <label>SQL</label>
+        <label>{t('sql.query')}</label>
         <textarea rows={8} value={sql} onChange={e=>setSql(e.target.value)} spellCheck={false} />
-        <div className="mt12"><button type="submit" disabled={loading}>{loading?'実行中…':'実行'}</button></div>
+        <div className="mt12">
+          <button type="submit" disabled={loading}>
+            {loading ? t('sql.executing') : t('sql.execute')}
+          </button>
+        </div>
       </form>
-      {err && <p className="mt12" style={{color:'#f87171'}}>Error: {err}</p>}
+      {err && <p className="mt12" style={{color:'#f87171'}}>{t('common.error')}: {err}</p>}
       <DataTable rows={rows} columns={cols} />
     </div>
   )

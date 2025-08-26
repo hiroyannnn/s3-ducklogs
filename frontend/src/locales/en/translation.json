@@ -1,0 +1,72 @@
+{
+  "common": {
+    "connect": "Connect",
+    "logs": "Logs",
+    "sql": "SQL",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close"
+  },
+  "navigation": {
+    "home": "Home",
+    "connect": "S3 Connection",
+    "logs": "View Logs",
+    "sql": "Execute SQL"
+  },
+  "connect": {
+    "title": "Connection Settings",
+    "description": "Enable DuckDB httpfs extension and configure S3 region/endpoint. AWS credentials are automatically retrieved from environment variables.",
+    "region": "Region",
+    "endpoint": "Endpoint (Optional: S3 Compatible)",
+    "apply": "Apply",
+    "applying": "Applying...",
+    "connectionStatus": "Connection Status",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "testConnection": "Test Connection",
+    "example": "Example: For AWS S3, leave endpoint blank / For MinIO etc., specify endpoint and configure AWS_* as needed"
+  },
+  "logs": {
+    "title": "View Logs",
+    "uri": "URI (s3://bucket/path/*.parquet etc.)",
+    "format": "Format",
+    "limit": "Limit",
+    "load": "Load",
+    "loading": "Loading...",
+    "filePath": "File Path",
+    "loadFile": "Load File",
+    "fileType": "File Format",
+    "csv": "CSV",
+    "json": "JSON",
+    "jsonl": "JSONL",
+    "ndjson": "NDJSON",
+    "parquet": "Parquet",
+    "noData": "No results available",
+    "rows": "Rows",
+    "columns": "Columns"
+  },
+  "sql": {
+    "title": "Execute SQL",
+    "query": "SQL",
+    "execute": "Execute",
+    "executing": "Executing...",
+    "result": "Result",
+    "noData": "No results available",
+    "sampleQueries": "Sample Queries",
+    "csvExample": "CSV File Example",
+    "jsonExample": "JSON File Example",
+    "parquetExample": "Parquet File Example"
+  },
+  "sampleData": {
+    "title": "Sample Data",
+    "description": "You can test with the following sample data",
+    "csvFile": "CSV File",
+    "jsonFile": "JSON File",
+    "parquetFile": "Parquet File",
+    "usage": "Usage",
+    "localPath": "Local File Path"
+  }
+}

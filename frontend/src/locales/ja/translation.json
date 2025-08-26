@@ -1,0 +1,72 @@
+{
+  "common": {
+    "connect": "接続",
+    "logs": "ログ",
+    "sql": "SQL",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "close": "閉じる"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "connect": "S3接続",
+    "logs": "ログ表示",
+    "sql": "SQL実行"
+  },
+  "connect": {
+    "title": "接続設定",
+    "description": "DuckDB httpfs 拡張を有効化し、S3 リージョン/エンドポイントを設定します。AWS 認証情報は環境変数から自動取得されます。",
+    "region": "Region",
+    "endpoint": "Endpoint (任意: S3互換)",
+    "apply": "適用",
+    "applying": "適用中…",
+    "connectionStatus": "接続状態",
+    "connected": "接続済み",
+    "disconnected": "未接続",
+    "testConnection": "接続テスト",
+    "example": "例: aws s3 に対しては endpoint 空欄でOK / MinIO等は endpoint を指定し、必要に応じて AWS_* を設定"
+  },
+  "logs": {
+    "title": "ログ一覧",
+    "uri": "URI (s3://bucket/path/*.parquet 等)",
+    "format": "形式",
+    "limit": "Limit",
+    "load": "読み込む",
+    "loading": "読み込み中…",
+    "filePath": "ファイルパス",
+    "loadFile": "ファイル読み込み",
+    "fileType": "ファイル形式",
+    "csv": "CSV",
+    "json": "JSON",
+    "jsonl": "JSONL",
+    "ndjson": "NDJSON",
+    "parquet": "Parquet",
+    "noData": "結果がありません",
+    "rows": "行",
+    "columns": "列"
+  },
+  "sql": {
+    "title": "SQL 実行",
+    "query": "SQL",
+    "execute": "実行",
+    "executing": "実行中…",
+    "result": "結果",
+    "noData": "結果がありません",
+    "sampleQueries": "サンプルクエリ",
+    "csvExample": "CSVファイルの例",
+    "jsonExample": "JSONファイルの例",
+    "parquetExample": "Parquetファイルの例"
+  },
+  "sampleData": {
+    "title": "サンプルデータ",
+    "description": "以下のサンプルデータを使用してテストできます",
+    "csvFile": "CSVファイル",
+    "jsonFile": "JSONファイル",
+    "parquetFile": "Parquetファイル",
+    "usage": "使用方法",
+    "localPath": "ローカルファイルパス"
+  }
+}

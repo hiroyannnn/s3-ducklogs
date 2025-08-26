@@ -5,6 +5,8 @@ import App from './App'
 import Connect from './pages/Connect'
 import Logs from './pages/Logs'
 import SQL from './pages/SQL'
+import './i18n' // i18nの初期化
+import './index.css' // CSSスタイル
 
 const router = createBrowserRouter([
   {
